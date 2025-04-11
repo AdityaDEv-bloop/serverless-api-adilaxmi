@@ -1,0 +1,16 @@
+botocore==1.37.30
+dnspython==2.7.0
+envs==1.4
+filelock==3.18.0
+greenlet==3.1.1
+idna==3.10
+jmespath==1.0.1
+psycopg2==2.9.10
+py3-validate-email @ git+https://git.ksol.io/karolyi/py3-validate-email@32c8f4cdfaba4c7e7fc81405a023c849a9268859
+python-dateutil==2.9.0.post0
+python-dotenv==1.1.0
+s3transfer==0.11.4
+six==1.17.0
+SQLAlchemy==2.0.40
+typing_extensions==4.13.1
+urllib3==2.3.0
