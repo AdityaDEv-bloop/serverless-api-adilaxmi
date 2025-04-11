@@ -1,0 +1,26 @@
+# "org" ensures this Service is used with the correct Serverless Framework Access Key.
+org: adilaxmi
+# "service" is the name of this project. This will also be added to your AWS resource names.
+service: adl-api
+
+provider:
+  name: aws
+  runtime: python3.12
+
+functions:
+  adlAuthorizer:
+    handler: handler.adl_authorizer.adlAuthorizer
+    layers:
+      - arn:aws:lambda:eu-north-1:660876686282:layer:adlApiLayer:2
+    events:
+      - httpApi:
+          path: /api/auth
+          method: post
+  changeLanguage:
+    handler: handler.change_language.changeLanguage
+    layers:
+      - arn:aws:lambda:eu-north-1:660876686282:layer:adlApiLayer:2
+    events:
+      - httpApi:
+          path: /api/changelanguage
+          method: post

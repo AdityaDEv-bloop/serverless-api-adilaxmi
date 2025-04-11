@@ -1,0 +1,1 @@
+pip install -t python/lib/python3.11/site-packages -r requirement.txt
